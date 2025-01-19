@@ -42,8 +42,8 @@ function App() {
 
             <div className='relative select-none overflow-hidden'>
               <img src={Image} alt="image-err" width={600} height={600} />
-              <div className="absolute bg-gradient-to-r from-transparent to-emerald-900 text-white text-sm font-medium opacity-100 top-20 lg:top-32 right-1 lg:right-14 skew-x-12 skew-y-6 px-4 py-2 rounded-lg select-none">ReactJS Developer</div>
-              <div className="absolute bg-gradient-to-l from-transparent to-emerald-900 text-white text-sm font-medium opacity-100 top-36 lg:top-56 left-2 lg:left-5 skew-x-12 skew-y-6 px-6 py-2 rounded-lg select-none">Web Developer</div>
+              <div className="absolute bg-gradient-to-r from-transparent to-emerald-900 text-white text-[12px] lg:text-sm font-medium opacity-100 top-16 lg:top-32 right-6 lg:right-14 skew-x-12 skew-y-6 px-4 py-2 rounded-lg select-none">ReactJS Developer</div>
+              <div className="absolute bg-gradient-to-l from-transparent to-emerald-900 text-white text-[12px] lg:text-sm font-medium opacity-100 top-36 lg:top-56 left-2 lg:left-5 skew-x-12 skew-y-6 px-6 py-2 rounded-lg select-none">Web Developer</div>
               <div className="absolute h-56 bg-gradient-to-t from-neutral-800 from-20% to-transparent w-full bottom-0"></div>
             </div>
           </div>
@@ -87,7 +87,7 @@ function App() {
             <h1 className='text-neutral-300 lg:text-2xl font-bold uppercase'>Skills</h1>
           </div>
           <div className="flex gap-3 mt-5">
-            <div className="flex gap-4 flex-wrap lg:flex-row">
+            <div className="flex gap-0 lg:gap-4 flex-wrap lg:flex-row">
               {dataSkills !== null && dataSkills.map((data, index) => (
                 <div className="p-2 flex items-center" key={index}>
                   <img src={data.image} alt="image-err"className='grayscale w-24 h-24 hover:grayscale-0 transition duration-700 hover:cursor-pointer'/>
