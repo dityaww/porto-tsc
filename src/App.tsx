@@ -41,7 +41,7 @@ function App() {
             </div>
 
             <div className='relative select-none overflow-hidden'>
-              <img src={Image} alt="image-err" width={600} height={600} className='rounded-md' />
+              <img src={Image} alt="image-err" width={600} height={600} />
               <div className="absolute bg-gradient-to-r from-transparent to-emerald-900 text-white text-sm font-medium opacity-100 top-20 lg:top-32 right-1 lg:right-14 skew-x-12 skew-y-6 px-4 py-2 rounded-lg select-none">ReactJS Developer</div>
               <div className="absolute bg-gradient-to-l from-transparent to-emerald-900 text-white text-sm font-medium opacity-100 top-36 lg:top-56 left-2 lg:left-5 skew-x-12 skew-y-6 px-6 py-2 rounded-lg select-none">Web Developer</div>
               <div className="absolute h-56 bg-gradient-to-t from-neutral-800 from-20% to-transparent w-full bottom-0"></div>
@@ -59,13 +59,12 @@ function App() {
           
           <div className="mt-5 grid lg:grid-cols-2 gap-5">
             {dataExperience !== null && dataExperience.map((data, index) => { 
-              { console.log(data.desc?.split('. ')) }
 
               return (
                 <div className="border border-neutral-700 py-4 px-8 rounded-md shadow-md" key={index}>
                   <p className='text-neutral-400 bg-neutral-700 w-fit px-4 py-1 rounded-full mb-3 font-semibold text-sm'>{data.date}</p>
                   <h2 className='text-white lg:text-xl font-semibold'>{data.name}</h2>
-                  <h4 className='text-emerald-500 font-medium text-[14px] pt-1'>{data.position}</h4>
+                  <h2 className='text-emerald-500 font-medium text-[14px] pt-1'>{data.position}</h2>
 
                   <ul className='pt-2'>
                     { data.desc?.split('. ').map((arr) => (
