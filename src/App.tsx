@@ -7,7 +7,8 @@ import { DataExperience } from './data/Experience'
 import { TypeExperience } from './types/experience/type'
 import { TypeSkills } from './types/skills/type'
 import { DataSkills } from './data/Skills'
-import Zig from './assets/zig.svg'
+// import Zig from './assets/zig.svg'
+import Resume from './assets/Aditya Widyatmoko-Resume.pdf'
 import { DataProjects } from './data/Projects'
 import { TypeProject } from './types/projects/type'
 import { motion } from 'motion/react'
@@ -37,7 +38,11 @@ function App() {
 
               </div>
               <p className='text-neutral-500 text-xl pt-6'>A FrontEnd Developer based in Magelang, Indonesia</p>
-              <motion.button whileHover={{ scale: 1.05, transition: { duration: 0.2 } }} whileTap={{ scale: 0.9 }}  className='bg-neutral-700 w-40 rounded-lg text-neutral-400 hover:bg-emerald-700 hover:text-neutral-200 lg:text-sm uppercase py-4 mt-8 font-bold'>download cv</motion.button>
+              <motion.button whileHover={{ scale: 1.05, transition: { duration: 0.2 } }} whileTap={{ scale: 0.9 }} className='bg-neutral-700 w-40 rounded-lg text-neutral-400 hover:bg-emerald-700 hover:text-neutral-200 lg:text-sm uppercase py-4 mt-8 font-bold'>
+                <a href={Resume} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                  download cv
+                </a>
+              </motion.button>
             </div>
 
             <div className='relative select-none overflow-hidden'>
