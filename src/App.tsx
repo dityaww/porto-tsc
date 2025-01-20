@@ -115,15 +115,15 @@ function App() {
             ))} */}
 
             { dataProject !== null && dataProject.map((data, index) => (
-              <div className="p-10 border border-neutral-700 shadow-lg rounded-lg">
-                <img src={data.images} alt="error-image" className='rounded-lg' />
-                <div className="my-5 flex justify-between items-center">
+              <div className="p-4 lg:p-6 border border-neutral-700 shadow-lg rounded-lg">
+                <img src={data.images} alt="error-image" className='rounded-lg object-cover w-full h-[21rem] select-none' />
+                <div className="my-4 flex justify-between items-center">
                   <h2 className='text-neutral-100 text-xl font-semibold'>{data.projectName}</h2>
-                  <a href='#' className="bg-blue-700 hover:bg-blue-800 hover:cursor-pointer rounded-md px-3 py-1.5">
+                  <a href={data.link} target='_blank' className="bg-blue-700 hover:bg-blue-800 hover:cursor-pointer rounded-md px-3 py-1.5">
                     <p className='text-white text-[14px]'>view project</p>
                   </a>
                 </div>
-                <p className='text-neutral-500 lg:text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deserunt possimus doloribus libero deleniti minima atque. At ab illo, pariatur distinctio maxime accusamus reiciendis eum ut accusantium rerum assumenda neque?</p>
+                <p className='text-neutral-500 lg:text-lg'>{data.description}</p>
               </div>
             ))}
 
