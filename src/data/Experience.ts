@@ -18,6 +18,7 @@ export const DataExperience = [
         name: 'PT. Impactbyte Teknologi Edukasi (Skilvul)',
         date: 'Aug 2022 - Des 2022',
         position: 'Independent Study Front-End Web Development',
+        desc: 'Operating Figma for creating wireframes, user flows, UI design, and prototyping. Learning JavaScript programming for Front-End web application development. Exploring JavaScript libraries such as ReactJS, including React Hooks, React Router, Redux and Context state management, as well as fetching API data using Axios and Fetch. Individual Projects: Web-based To-Do List Application, Web-based BMI Calculator, Portfolio Website, Movie Application utilizing The Movie Database (TMDB) API. Final Project: A team project consisting of 6 developers to create a web-based crowdfunding application for individuals with disabilities, named "Ayo Bantu."'
     },
     {
         id: 4,
